@@ -1,0 +1,15 @@
+{% extends 'template.html' %}
+
+{% block content %}
+<h1>Shubham {{name}}</h1>
+
+<form action="add" method="post">
+    {% csrf_token %}
+    Enter number : <input name="numone" type="text">
+    Enter number : <input name="numtwo" type="text">
+    <input type="submit">
+
+</form>
+
+
+{% endblock %}
